@@ -440,3 +440,8 @@ video {
 .navs-class li a {
   color: #fff;
 }
+/* new wala css */
+.page-content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}

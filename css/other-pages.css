@@ -176,9 +176,21 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.page-content {
-  padding-top: 2rem;
-}
+
 .other-page-hero {
-  background-color: #24c254;
+  text-align: center;
+  background-color: #5abd51;
+  padding: 4rem 0.5rem;
+}
+.other-page-hero h1 {
+  color: #fff;
+}
+.other-page-hero nav {
+  text-align: center;
+}
+.other-page-hero nav .breadcrumb-item a {
+  color: #ed3919;
+}
+.other-page-hero nav .breadcrumb-title {
+  color: #fff;
 }
