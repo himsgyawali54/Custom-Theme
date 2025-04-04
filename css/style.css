@@ -1,0 +1,442 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  font-size: 62.5%;
+  --color-primary: #22bc50;
+  --color-secondary: #148bcc;
+  --color-btn: #fe4c1c;
+  --color-accent: #16a085;
+  --h1-fontsize: clamp(5rem, 5vw, 9.6rem);
+  --h2-fontsize: clamp(2.5rem, 3vw, 4.15rem);
+  --h3-fontsize: clamp(2rem, 2vw, 3.83rem);
+  --h4-fontsize: clamp(1.5rem, 1.5vw, 3.35rem);
+  --h5-fontsize: clamp(1.3rem, 1.3vw, 3.03rem);
+  --h6-fontsize: clamp(1.1rem, 1.1vw, 2.87rem);
+  --p-fontsize: clamp(1.5rem, 1.5vw, 2rem);
+  --li-fontsize: clamp(1.5rem, 1.5vw, 2.15rem);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  scroll-behavior: smooth;
+  --top-spacing: 5.5rem;
+  scroll-padding-top: var(--top-spacing);
+  color: var(--colr-primary);
+}
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-family: "Barlow", sans-serif;
+  outline: #008374;
+}
+section {
+  padding: 3rem 0;
+}
+p {
+  text-align: justify;
+  font-size: var(--p-fontsize);
+}
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+li {
+  font-size: var(--li-fontsize);
+}
+h1 {
+  font-size: var(--h1-fontsize);
+  font-weight: 700;
+  line-height: 9.6rem;
+}
+@media (width <= 991px) {
+  h1 {
+    line-height: 5rem;
+  }
+}
+h2 {
+  font-size: var(--h2-fontsize);
+}
+h3 {
+  font-size: var(--h3-fontsize);
+}
+h4 {
+  font-size: var(--h4-fontsize);
+}
+h5 {
+  font-size: var(--h5-fontsize);
+}
+h6 {
+  font-size: var(--h6-fontsize);
+}
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+.btn-all {
+  background: var(--color-btn);
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-size: var(--h5-fontsize);
+  transition: color 0.4s ease, background-color 0.4s ease,
+    border-color 0.4s ease;
+}
+.btn-all:hover {
+  color: var(--color-btn);
+  background-color: #fff;
+  border: 1px solid var(--color-btn);
+}
+#header {
+  background: var(--color-primary);
+  padding: 8px 0px;
+}
+#header .navbar-brand img {
+  width: 155px;
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}
+.section-heading p {
+  text-align: center;
+}
+.section-heading h2 {
+  position: relative;
+  padding: 1rem 0rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.section-heading h2::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  display: block;
+  width: 15rem;
+  height: 0.3rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.section-heading h2::after {
+  content: "";
+  position: absolute;
+  background: var(--color-primary);
+  display: block;
+  width: 5rem;
+  height: 0.25rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+.card {
+  border: 0;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 0px #04064212;
+  background-color: none;
+  overflow: hidden;
+  z-index: 2;
+}
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  right: -30px;
+  height: 190px;
+  width: 190px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-btn) 0%,
+    var(--color-btn) 100%
+  );
+  transform: rotate(60deg);
+  opacity: 0.05;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+.card:hover::before {
+  transform: rotate(60deg) scale(0.7);
+}
+.card::after {
+  transition-delay: 0.2s;
+  transform: rotate(60deg) scale(0.7);
+}
+.card img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.card .card-body {
+  position: relative;
+  padding: 2rem;
+}
+
+.card .card-body .card-icon {
+  position: absolute;
+  right: 8%;
+  top: -15%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1.5rem 1rem 0;
+}
+.card .card-body .card-icon i {
+  font-size: var(--h3-fontsize);
+  background-color: var(--color-btn);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+.card .card-body .card-category {
+  font-size: var(--h6-fontsize);
+  color: rgb(140, 140, 140);
+}
+.card .card-body h3 {
+  font-size: var(--h4-fontsize);
+}
+.card .card-body p {
+  font-size: var(--h5-fontsize);
+}
+
+#call-to-action {
+  background: url("../img/call-to-action.webp") 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#call-to-action .container > * {
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+#footer .top-footer {
+  background: var(--color-accent);
+  color: #fff;
+}
+#footer .top-footer p,
+#footer .top-footer li {
+  font-size: var(--h6-fontsize);
+  line-height: 2;
+}
+
+#footer .top-footer a {
+  color: #fff;
+}
+#footer .top-footer a i {
+  font-size: var(--h4-fontsize);
+  margin-right: 1rem;
+}
+#footer .bottom-footer {
+  padding: 1rem 0rem;
+  background-color: #008374;
+}
+#footer .bottom-footer h4 {
+  color: #fff;
+  margin-bottom: 0;
+}
+.faq .accordion-button {
+  font-size: 1.8rem;
+  padding: 2rem 2rem 2rem 3rem;
+  background-color: rgba(230, 227, 222, 0.205);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.faq .accordion-button::before {
+  position: absolute;
+  color: var(--color-secondary);
+}
+
+.faq .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.faq .accordion-button span {
+  color: var(--color-secondary);
+  margin-right: 1rem;
+}
+.faq .accordion .accordion-item {
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  border-bottom: 2px solid;
+  border-color: var(--color-secondary);
+}
+#contact .contact-medium {
+  padding: 1rem;
+}
+#contact .contact-medium i {
+  font-size: var(--h3-fontsize);
+  color: #fff;
+  border: 0.8px solid #e0d8d893;
+  border-radius: 50%;
+  padding: 1.6rem 2.1rem;
+  line-height: 9rem;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-secondary);
+}
+#contact .contact-medium i:hover {
+  border: 3px solid var(--color-btn);
+  background: #fff;
+  color: var(--color-secondary);
+}
+#contact h4 {
+  margin: 1rem 0rem;
+}
+#contact p {
+  text-align: center;
+  font-size: var(--h6-fontsize);
+}
+#footer #contact-form {
+  background: url("../img/contact-us-bg.webp") 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#footer #contact-form .form-label {
+  font-size: var(--h4-fontsize);
+}
+#footer #contact-form .form-control {
+  font-size: var(--h5-fontsize);
+}
+#footer #contact-form textarea {
+  resize: none;
+}
+.fixed-whatsapp-btn {
+  position: fixed;
+  bottom: 1.8rem;
+  left: 1.9rem;
+  border: none;
+  background: none;
+  background-color: #25d366;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  z-index: 996;
+}
+.fixed-whatsapp-btn i {
+  font-size: 3rem;
+  color: white;
+  line-height: 0;
+}
+.whatsapp-card {
+  position: fixed;
+  left: 1rem;
+  bottom: 8rem;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+}
+#showWhatsapp {
+  transition: opacity 600ms, visibility 600ms;
+}
+
+.whatsapp-card .card .card-header {
+  border-radius: 0;
+  background-color: #1a6f64;
+  border: none;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+  text-align: start;
+  padding: 1rem 1rem;
+  color: white;
+}
+.whatsapp-card .card .card-header p {
+  margin-bottom: 0.3rem;
+}
+
+.whatsapp-card .card .card-header .chat-icon {
+  font-size: var(--h3-fontsize);
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  padding: 0.5rem 0rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.463);
+}
+.whatsapp-card .card .card-body {
+  background-image: url(../img/whatsapp-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.whatsapp-card .card .card-body .text-box {
+  background-color: #fff;
+  text-align: start;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin: 0;
+  font-size: var(--h6-fontsize);
+  border-radius: 1rem;
+}
+.whatsapp-card .card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+}
+.whatsapp-card .card .card-footer .card-btn-all {
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: var(--h5-fontsize);
+  transition: color 0.4s ease, background-color 0.4s ease,
+    border-color 0.4s ease;
+}
+#goTop {
+  position: fixed;
+  bottom: 2rem;
+  left: 7.5rem;
+  border: none;
+  background-color: #25d366;
+  border-radius: 5rem;
+
+  width: 4rem;
+  height: 4rem;
+  z-index: 996;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+#goTop i {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.navs-class {
+  display: flex !important;
+}
+.navs-class li {
+  list-style: none !important;
+  margin: 0 30px;
+}
+.navs-class li a {
+  color: #fff;
+}

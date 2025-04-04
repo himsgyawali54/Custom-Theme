@@ -1,0 +1,106 @@
+#single-blog-content {
+  padding: 0 0 3rem;
+}
+#single-blog-content .col-12 img:first-of-type {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#single-blog-content .container .row {
+  text-align: center;
+  align-items: center;
+}
+#single-blog-content h1 {
+  line-height: 1.3;
+  font-size: clamp(3rem, 3vw, 5rem);
+  margin: 1rem 0;
+}
+
+#single-blog-content h2,
+#single-blog-content h3,
+#single-blog-content h4,
+#single-blog-content h5,
+#single-blog-content h6 {
+  text-align: start;
+}
+#single-blog-content h2 {
+  margin: 3rem 0 0.5rem;
+}
+#single-blog-content h3 {
+  margin: 2rem 0 0.5rem;
+}
+#single-blog-content .recent-posts {
+  margin: 3rem 0;
+}
+#single-blog-content .recent-posts .row {
+  justify-content: space-around;
+}
+#single-blog-content .recent-posts .row .col-12 {
+  position: relative;
+}
+#single-blog-content .about-author {
+  margin: auto;
+}
+#single-blog-content .about-author img {
+  border: 3px solid var(--color-primary);
+  border-radius: 50%;
+}
+#single-blog-content article ol li {
+  text-align: start;
+}
+#single-blog-content article img {
+  margin: 1.5rem 0;
+}
+#single-blog-content article .row {
+  justify-content: center;
+  align-items: start;
+}
+#single-blog-content article .row .card {
+  margin-top: 3rem;
+}
+
+@media (min-width: 991px) {
+  #single-blog-content article .row .card {
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+  #single-blog-content article .row .side-bar {
+    position: sticky;
+    top: 6rem;
+  }
+}
+#single-blog-content article .toc-link {
+  color: rgb(72, 68, 68);
+}
+#single-blog-content article .toc-link.clicked {
+  color: var(--color-primary);
+}
+#single-blog-content article .row .card .share-links {
+  padding: 1rem 0;
+}
+#single-blog-content article .row .card .share-links p {
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+#single-blog-content article .row .card .share-links i {
+  font-size: var(--h3-fontsize);
+  margin: 0.5rem;
+}
+#single-blog-content article .row .card .card-body p:nth-child(2) {
+  font-size: var(--h3-fontsize);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+#single-blog-content article .row .card ol li {
+   font-size: var(--h6-fontsize);
+  margin-bottom: 1.3rem;
+  font-weight: 500;
+}
+
+#single-blog-content article .row .card ol li li {
+    
+  margin: 1rem;
+  font-weight: 400;
+}
