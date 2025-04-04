@@ -18,7 +18,9 @@ the_post();
     </div>
     </div>
     <div class="container">
+      <?php  ?>
     <div class="row page-content">
+
     <?php the_content(); ?>
     </div>
     </div>
