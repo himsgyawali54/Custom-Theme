@@ -208,7 +208,7 @@
                     name="Website URL"
                     class="form-control"
                     placeholder="Web URL"
-                    required
+                    required`
                   />
                   <input
                     type="email"
