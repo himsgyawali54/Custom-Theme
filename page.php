@@ -17,8 +17,10 @@ the_post();
     </div>
     </div>
     </div>
-    <div class="container">
-      <?php  ?>
+    <div class="container pt-5">
+      <div class="post-thumbnail text-center">
+      <?php the_post_thumbnail('large'); ?>
+      </div>
     <div class="row page-content">
 
     <?php the_content(); ?>

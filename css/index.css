@@ -4,10 +4,10 @@
   right: 0;
   left: 0;
 }
-img {
+/* img {
   width: clamp(100px, 100%, 1000px);
   height: clamp(100px, 100%, 1000px);
-}
+} */
 
 #index #hero {
   padding: 0;
