@@ -198,7 +198,8 @@
       <section id="call-to-action-seo-report">
         <div class="container">
           <h2>Boost your website traffic!</h2>
-          <p>Check your Website Score</p>
+          <p>Check your Website
+             Score</p>
           <form action="https://formsubmit.co/info@seostairs.com" method="POST">
             <div class="row">
               <div class="col-lg-8">

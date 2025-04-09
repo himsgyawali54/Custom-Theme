@@ -21,14 +21,11 @@
     <header id="header" class="sticky-top">
       
         <div class="container d-flex justify-content-between">
-          <a class="navbar-brand" href="/" aria-label="logo of SeoStairs">
-            <img
-              src="<?php echo get_template_directory_uri(); ?>/img/logo-hd.webp"
-              class="img-fluid"
-              width="369px"
-              height="82px"
-              alt="Seostairs Logo"
-          /></a>
+          <?php
+            $logoimg= get_header_image();
+          ?>
+          <a class="navbar-brand" href="<?php echo site_url() ?>">
+            <img src="<?php echo $logoimg;?>" alt=""></a>
           <?php wp_nav_menu(array('theme_location' => 'primary-menu','menu_class' => 'navs-class')) 
           
           ?>
