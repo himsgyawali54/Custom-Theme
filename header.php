@@ -16,6 +16,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/index.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/other-pages.css" rel="stylesheet" />
+    <?php wp_head(); ?>
   </head>
   <body>
     <header id="header" class="sticky-top">

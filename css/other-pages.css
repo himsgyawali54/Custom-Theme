@@ -167,9 +167,7 @@
 #other-pages #about-us-teams .card .card-body .row img {
   border-radius: 50%;
 }
-#other-pages #blogs-grid .card {
-  height: 100%;
-}
+
 #other-pages #blogs-grid .card .card-body p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
