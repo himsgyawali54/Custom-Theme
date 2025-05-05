@@ -94,13 +94,28 @@
   margin-bottom: 1.5rem;
 }
 #single-blog-content article .row .card ol li {
-   font-size: var(--h6-fontsize);
+  font-size: var(--h6-fontsize);
   margin-bottom: 1.3rem;
   font-weight: 500;
 }
 
 #single-blog-content article .row .card ol li li {
-    
   margin: 1rem;
   font-weight: 400;
+}
+.blogs-btn-all {
+  background: var(--color-btn);
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-size: var(--h5-fontsize);
+  transition: color 0.4s ease, background-color 0.4s ease,
+    border-color 0.4s ease;
+}
+.blogs-btn-all:hover {
+  color: var(--color-btn);
+  background-color: #fff;
+  border: 1px solid var(--color-btn);
 }

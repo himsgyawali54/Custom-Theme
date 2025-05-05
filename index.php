@@ -50,6 +50,7 @@
     $excerpt = get_the_excerpt(); 
     echo wp_trim_words( strip_tags($excerpt), 15, '...' ); 
   ?></p>
+  <div class="mt-5"><a href="<?php the_permalink(); ?>" class="blogs-btn-all "> Read more</a></div>
                 </div>
                 
               </div>
