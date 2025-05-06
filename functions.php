@@ -10,6 +10,14 @@ function mytheme_setup() {
     ));
     //add header logo
     add_theme_support('custom-header');
+
+    //register sidebar
+    register_sidebar(
+        array(
+            'name' => "Sidebar",
+            'id' => "sidebar"
+        )
+    );
 }
 add_action('after_setup_theme', 'mytheme_setup');
 ?>

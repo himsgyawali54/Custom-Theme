@@ -4,7 +4,7 @@ get_header();
   <main id="single-blog">
       <section id="single-blog-content">
         <div class="container">
-          <div class="row">
+          <div class="row pt-5">
             <div class="col-12">
                 <?php
             the_post_thumbnail('large', ['class' => 'img-fluid']);
@@ -22,15 +22,22 @@ get_header();
            
             </div>
             <article>
-              
-              
-               
-                  <h1><?php the_title(); ?></h1>
+              <div class="row single-post-row">
+                <div class="col-12 col-md-8">
+                <h1><?php the_title(); ?></h1>
                   <p>
                     <?php the_content(); ?>
                   </p>
                  
-                    <?php comments_template(); ?>
+                    <?php comment_form(); ?>
+                </div>
+                <div class="col-12 col-md-4 sidebar">
+                  <?php dynamic_sidebar('sidebar') ?>
+                </div>
+              </div>
+              
+               
+                  
                  
                
             </article>
