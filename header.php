@@ -3,7 +3,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      <link rel="canonical" href="https://www.seostairs.com" />
-    <title>SEO Company | Best SEO Marketing Agency | SEO Stairs</title>
+   <title><?php bloginfo('name'); ?><?php wp_title(); ?> 
+  <?php if(is_front_page()) { echo "|"; echo" "; bloginfo('description');  }?>
+  </title>
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/img/seostairs-favicon.webp" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
