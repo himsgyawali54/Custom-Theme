@@ -1,5 +1,6 @@
 <?php 
 get_header();
+$category = get_categories(); 
 ?>
   <main id="single-blog">
       <section id="single-blog-content">
@@ -31,8 +32,23 @@ get_header();
                  
                     <?php comment_form(); ?>
                 </div>
-                <div class="col-12 col-md-4 sidebar">
+                <div class="col-12 col-md-4 ">
+                  <div class="sidebar">
                   <?php dynamic_sidebar('sidebar') ?>
+                  </div>
+                  <h2 class="pb-4">Category</h2>
+                  <div class="category-list">
+                  <?php 
+                  foreach ($category as $categoryvalue){
+                   
+                   ?>
+<ul><li>
+                  <a href="<?php echo get_category_link( $categoryvalue -> term_id); ?>">
+                  <p><?php echo $categoryvalue -> name; ?> ( <?php echo $categoryvalue -> count; ?> ) </p>
+
+                  </a></li></ul>
+                  <?php } ?>
+                </div>
                 </div>
               </div>
               

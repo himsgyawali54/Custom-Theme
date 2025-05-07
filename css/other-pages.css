@@ -216,3 +216,10 @@
   color: #fff;
   margin: 1rem auto 3.5rem;
 }
+.category-list p {
+  color: #1a1a1a;
+  font-size: 20px;
+}
+.category-list ul li {
+  list-style: disc;
+}

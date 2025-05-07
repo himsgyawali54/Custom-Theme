@@ -72,38 +72,6 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module">
-      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        loop: true,
-        slidesPerView: 3,
-        spaceBetween: 20,
-        breakpoints: {
-          // when window width is >= 0px
-          0: {
-            slidesPerView: 1,
-          },
-          // when window width is >= 768px
-          768: {
-            slidesPerView: 2,
-          },
-          // when window width is >= 992px
-          992: {
-            slidesPerView: 3,
-          },
-        },
-        autoplay: {
-          delay: 3000,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-    <script>
-      new PureCounter();
-    </script>
+  
+    
   
