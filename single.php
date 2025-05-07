@@ -50,12 +50,7 @@ $category = get_categories();
                   <?php } ?>
                 </div>
                 </div>
-              </div>
-              
-               
-                  
-                 
-               
+              </div> 
             </article>
 
             <div class="col-12 recent-posts">
