@@ -192,3 +192,27 @@
 .other-page-hero nav .breadcrumb-title {
   color: #fff;
 }
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-not-found img {
+  padding-top: 3rem;
+}
+.page-not-found p:first-of-type {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+.page-not-found .btn-all {
+  padding: 1rem 2.8rem;
+  font-size: 1.9rem;
+  font-weight: 500;
+  background-color: #5abd51;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  margin: 1rem auto 3.5rem;
+}
