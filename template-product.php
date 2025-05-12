@@ -1,13 +1,14 @@
 
 <?php
+//Template Name: Product
    get_header();
 ?>
    <main id="other-pages">
       <section id="other-pages__hero">
         <div class="container">
           <div class="row g-4 g-md-5 align-items-center justify-content-around">
-            <div class="col-12 col-lg-6">
-              <h1>Our Blogs</h1>
+            <div class="col-12">
+              <h1>Our products</h1>
               <h2>Learn <span>More</span><br />From Us</h2>
               <p>
                 News From impact And Around The World Of Web Design And Online
@@ -26,13 +27,18 @@
       <section id="blogs-grid">
         <div class="container">
           <div class="section-heading">
-            <h2>Our Blogs</h2>
+            <h2>Our Products List</h2>
           </div>
           <div class="row g-4 g-md-5">
                 <?php 
-                while(have_posts())
+                $wpproduct= array(
+                    'post_type' => 'product',
+                    'post_status' => 'publish'
+                );
+                $productquery= new WP_Query($wpproduct);
+                while($productquery -> have_posts())
                 {
-                  the_post();
+                  $productquery -> the_post();
                 ?>
                 <div class="col-12 col-md-6 col-lg-4">
                 <div class="card" data-aos="fade-up" data-aos-duration="2000"></div>
@@ -55,9 +61,7 @@
                 ?>
 
             </div>
-            <div class="pagination pt-5">
-             <?php echo wp_pagenavi(); ?> 
-             </div>  
+            
           </div>
         </div>
       </section>
