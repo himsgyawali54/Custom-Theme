@@ -6,25 +6,23 @@
    <main id="other-pages">
       <section id="other-pages__hero">
         <div class="container">
-          <div class="row g-4 g-md-5 align-items-center justify-content-around">
+          <div class="row g-4 g-md-5 align-items-center justify-content-center">
             <div class="col-12">
               <h1>Our products</h1>
-              <h2>Learn <span>More</span><br />From Us</h2>
+              <h2>Perfect <span>solution  </span>for all business sizes  </h2>
               <p>
                 News From impact And Around The World Of Web Design And Online
                 Marketing.
               </p>
               <a href="#contact-form">
-                <button class="btn-all">Get Free Proposal</button>
+                <button class="btn-all mt-4">Get Free Proposal</button>
               </a>
             </div>
-            <div class="col-12 col-md-8 col-lg-5">
-              <my-form></my-form>
-            </div>
+           
           </div>
         </div>
       </section>
-      <section id="blogs-grid">
+      <section id="product-grid">
         <div class="container">
           <div class="section-heading">
             <h2>Our Products List</h2>
@@ -40,8 +38,8 @@
                 {
                   $productquery -> the_post();
                 ?>
-                <div class="col-12 col-md-6 col-lg-4">
-                <div class="card" data-aos="fade-up" data-aos-duration="2000"></div>
+                <div class="col-12 col-md-6 pt-5">
+                <div class="card" data-aos="fade-up" data-aos-duration="2000">
                 <div class="card-body">
                 <?php if (has_post_thumbnail()) {
             the_post_thumbnail('large', ['class' => 'img-fluid']);

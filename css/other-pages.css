@@ -223,3 +223,10 @@
 .category-list ul li {
   list-style: disc;
 }
+#product-grid .row {
+  padding-bottom: 3rem;
+}
+#product-grid .card {
+  box-shadow: 9.899px 9.899px 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem 2.5rem;
+}
