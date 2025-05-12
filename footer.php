@@ -326,4 +326,5 @@
       </section>
     </footer>
     <script src="main.js"></script>
+    <script src="form.js"></script>
     <?php wp_footer(); ?>

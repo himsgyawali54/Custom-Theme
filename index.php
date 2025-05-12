@@ -8,7 +8,7 @@
           <div class="row g-4 g-md-5 align-items-center justify-content-around">
             <div class="col-12 col-lg-6">
               <h1>Our Blogs</h1>
-              <h2>Learn <span>More</span><br />From Us</h2>
+              <h2>Learn <span>More</span> From Us</h2>
               <p>
                 News From impact And Around The World Of Web Design And Online
                 Marketing.
@@ -65,7 +65,7 @@
 
     <?php get_footer(); ?>
     
-
+ <script src="form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   
     
